@@ -1,0 +1,41 @@
+﻿Build started 2017/8/18 15:44:21.
+     1>Project "D:\MyProjects\driver\ndislwf\src\60\NetFilterFilter.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file ".\debug-32\NetFilterFilter.lastbuildstate".
+       InitializeBuildStatus:
+         Creating ".\debug-32\NetFilterFilter.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /IE:\WinDDK\7600.16385.1\inc\ddk /IE:\WinDDK\7600.16385.1\inc\crt /IE:\WinDDK\7600.16385.1\inc\ddk /IE:\WinDDK\7600.16385.1\inc\ddk /IE:\WinDDK\7600.16385.1\inc\api /IE:\WinDDK\7600.16385.1\inc\ddk /Zi /nologo /W3 /WX- /Od /Oi /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D CONDITION_HANDLING=1 /D NT_INST=0 /D WIN32=100 /D _NT1X_=100 /D WINNT=1 /D WIN32_LEAN_AND_MEAN=1 /D DEVL=1 /D FPO=0 /D NDEBUG /D _DLL=1 /D DEPRECATE_DDK_FUNCTIONS /D _WIN32_WINNT=_WIN32_WINNT_LONGHORN /D WINVER=0x0601 /D _WIN32_IE=0x0700 /D NTDDI_VERSION=NTDDI_LONGHORN /D BINARY_COMPATIBLE=0 /D NT /D UNICODE /D NDIS60 /D NDISLWF /D DBG /D _VC80_UPGRADE=0x0600 /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\debug-32\\" /Fd".\debug-32\ndislwf.pdb" /Gz /TC /analyze- /errorReport:prompt arp.c device.c ethernet.c filter.c flt_dbg.c icmp.c ip.c tcp.c udp.c  /Zel -cbstring 
+     1>cl : Command line warning D9035: option 'Ze' has been deprecated and will be removed in a future release
+         arp.c
+     1>arp.c(41): warning C4133: '=' : incompatible types - from 'ARP_CACHE_NODE *' to 'ARP_HEADER *'
+         device.c
+         ethernet.c
+         filter.c
+         flt_dbg.c
+         icmp.c
+         ip.c
+         tcp.c
+         udp.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\MyProjects\driver\ndislwf\src\60\.\debug-32\NetFilterFilter.sys) does not match the Linker's OutputFile property value (D:\MyProjects\driver\ndislwf\src\60\debug-32\ndislwf.sys). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(NetFilterFilter) does not match the Linker's OutputFile property value (ndislwf). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\debug-32\ndislwf.sys" /VERSION:"5.0" /INCREMENTAL:NO /NOLOGO /LIBPATH:E:\WinDDK\7600.16385.1\lib\win7\i386 ntoskrnl.lib hal.lib wmilib.lib ndis.lib fwpkclnt.lib bufferoverflowK.lib BufferOverflowK.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB /MANIFEST:NO /PDB:"D:\MyProjects\driver\ndislwf\src\60\debug-32\NetFilterFilter.pdb" /STACK:"262144","4096" /Driver /OPT:REF /OPT:ICF /TLBID:1 /ENTRY:"DriverEntry" /RELEASE /BASE:"0x10000" /IMPLIB:".\debug-32\NetFilterFilter.lib" /MERGE:".rdata=.text" /MACHINE:X86 ".\debug-32\arp.obj"
+         ".\debug-32\device.obj"
+         ".\debug-32\ethernet.obj"
+         ".\debug-32\filter.obj"
+         ".\debug-32\flt_dbg.obj"
+         ".\debug-32\icmp.obj"
+         ".\debug-32\ip.obj"
+         ".\debug-32\tcp.obj"
+         ".\debug-32\udp.obj" /subsystem:native /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210 /driver:WDM 
+         NetFilterFilter.vcxproj -> D:\MyProjects\driver\ndislwf\src\60\.\debug-32\NetFilterFilter.sys
+       FinalizeBuildStatus:
+         Deleting file ".\debug-32\NetFilterFilter.unsuccessfulbuild".
+         Touching ".\debug-32\NetFilterFilter.lastbuildstate".
+     1>Done Building Project "D:\MyProjects\driver\ndislwf\src\60\NetFilterFilter.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.29

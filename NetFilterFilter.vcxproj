@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Amd64 Checked|Win32">
+      <Configuration>Amd64 Checked</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Amd64 Checked|x64">
+      <Configuration>Amd64 Checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Amd64 Free|Win32">
+      <Configuration>Amd64 Free</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Amd64 Free|x64">
+      <Configuration>Amd64 Free</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Checked|Win32">
+      <Configuration>Checked</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Checked|x64">
+      <Configuration>Checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Free|Win32">
+      <Configuration>Free</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Free|x64">
+      <Configuration>Free</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectName>nidsFilter</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Free|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Free|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Free|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Checked|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Checked|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Free|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Free|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Free|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Checked|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Checked|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Checked|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Checked|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked|Win32'">
+    <OutDir>.\debug-32\</OutDir>
+    <IntDir>.\debug-32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.sys</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">
+    <OutDir>.\objchk\i386\</OutDir>
+    <IntDir>.\objchk\i386\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Checked|Win32'">
+    <OutDir>.\objchk\Amd64\</OutDir>
+    <IntDir>.\objchk\Amd64\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Checked|x64'">
+    <OutDir>.\objchk\Amd64\</OutDir>
+    <IntDir>.\objchk\Amd64\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.sys</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'">
+    <OutDir>.\objfre\i386\</OutDir>
+    <IntDir>.\objfre\i386_int\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.sys</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Free|x64'">
+    <OutDir>.\objfre\amd64\</OutDir>
+    <IntDir>.\objfre\amd64_int\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.sys</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Free|Win32'">
+    <OutDir>.\objfre\Amd64\</OutDir>
+    <IntDir>.\objfre\Amd64\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Free|x64'">
+    <OutDir>.\objfre\Amd64\</OutDir>
+    <IntDir>.\objfre\Amd64\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>.;$(IFSKIT_INC_PATH);$(TARGET_INC_PATH);$(CRT_INC_PATH);$(DDK_INC_PATH);$(WDM_INC_PATH);E:\WinDDK\7600.16385.1\inc\api;E:\WinDDK\7600.16385.1\inc\ddk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_X86_=1;i386=1;STD_CALL;CONDITION_HANDLING=1;NT_INST=0;WIN32=100;_NT1X_=100;WINNT=1;WIN32_LEAN_AND_MEAN=1;DEVL=1;FPO=0;NDEBUG;_DLL=1;DEPRECATE_DDK_FUNCTIONS;_WIN32_WINNT=_WIN32_WINNT_LONGHORN;WINVER=0x0601;_WIN32_IE=0x0700;NTDDI_VERSION=NTDDI_LONGHORN;BINARY_COMPATIBLE=0;NT;UNICODE;NDIS60;NDISLWF;DBG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\debug-32\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\debug-32\NetFilter.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\debug-32\</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug-32\ndislwf.pdb</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zel -cbstring </AdditionalOptions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\objchk\i386\NetFilter.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(CRT_INC_PATH);$(DDK_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;BINARY_COMPATIBLE=0;NT;UNICODE;_UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\debug-32\NetFilter.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>.\debug-32\ndislwf.sys</OutputFile>
+      <AdditionalLibraryDirectories>$(TARGET_LIB_PATH);E:\WinDDK\7600.16385.1\lib\win7\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/subsystem:native /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210 /driver:WDM </AdditionalOptions>
+      <SetChecksum>true</SetChecksum>
+      <MergeSections>.rdata=.text</MergeSections>
+      <BaseAddress>0x10000</BaseAddress>
+      <AdditionalDependencies>ntoskrnl.lib;hal.lib;wmilib.lib;ndis.lib;fwpkclnt.lib;bufferoverflowK.lib;BufferOverflowK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <Version>5.0</Version>
+      <StackReserveSize>262144</StackReserveSize>
+      <StackCommitSize>4096</StackCommitSize>
+      <EntryPointSymbol>DriverEntry</EntryPointSymbol>
+      <Driver>Driver</Driver>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>.;$(TARGET_INC_PATH);$(CRT_INC_PATH);$(DDK_INC_PATH);$(WDM_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>warning.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_X86_=1;i386=1;STD_CALL;CONDITION_HANDLING=1;NT_INST=0;WIN32=100;_NT1X_=100;WINNT=1;WIN32_LEAN_AND_MEAN=1;DEVL=1;FPO=0;NDEBUG;_DLL=1;DBG=1;DEPRECATE_DDK_FUNCTIONS;_WIN32_WINNT=_WIN32_WINNT_LONGHORN;WINVER=$(WINVER);_WIN32_IE=$(_WIN32_IE);NTDDI_VERSION=NTDDI_LONGHORN;BINARY_COMPATIBLE=0;NT;UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\objchk\i386\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\objchk\i386\NetFilter.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\objchk\i386\</ObjectFileName>
+      <ProgramDataBaseFileName>.\objchk\i386\NetFilter.pdb</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zel -cbstring </AdditionalOptions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\objchk\i386\NetFilter.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(CRT_INC_PATH);$(DDK_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;BINARY_COMPATIBLE=0;NT;UNICODE;_UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\objchk\i386\NetFilter.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>.\objchk\i386\NetFilter.sys</OutputFile>
+      <AdditionalLibraryDirectories>$(TARGET_LIB_PATH);$(SDK_LIB_PATH);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions> /DRIVER  /SECTION:INIT,d  /FULLBUILD /OPT:REF /OPT:I  /osversion:5.00 /subsystem:native,1.10 /debug:FULL /ignore:4  /subsystem:native,1.10 /debug:FULL /ignore:4010,4037,4039,4065,4070,4078,4087,4089,  /debug:FULL /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210   /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210 </AdditionalOptions>
+      <SetChecksum>true</SetChecksum>
+      <MergeSections>.rdata=.text</MergeSections>
+      <BaseAddress>0x10000</BaseAddress>
+      <AdditionalDependencies>ntoskrnl.lib;hal.lib;wmilib.lib;ndis.lib;fwpkclnt.lib;bufferoverflowK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <Version>5.0</Version>
+      <StackReserveSize>262144</StackReserveSize>
+      <StackCommitSize>4096</StackCommitSize>
+      <EntryPointSymbol>DriverEntry</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Checked|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>.;$(TARGET_INC_PATH);$(CRT_INC_PATH);$(DDK_INC_PATH);$(WDM_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>warning.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_AMD64_;AMD64;STD_CALL;WIN32=100;_WIN32_WINNT=_WIN32_WINNT_LONGHORN;WINVER=$(WINVER);_WIN32_IE=_WIN32_WINNT_LONGHORN;NTDDI_VERSION=NTDDI_LONGHORN;BINARY_COMPATIBLE=0;NDEBUG;UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\objchk\Amd64\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\objchk\Amd64\NetFilter.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\objchk\Amd64\</ObjectFileName>
+      <ProgramDataBaseFileName>.\objchk\Amd64\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zel -cbstring /Oxs </AdditionalOptions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\objchk\Amd64\NetFilter.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(CRT_INC_PATH);$(DDK_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;DBG=1;BINARY_COMPATIBLE=0;NT;UNICODE;_UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\objchk\Amd64\NetFilter.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>objchk\Amd64\NetFilter.sys</OutputFile>
+      <AdditionalOptions> /DRIVER  /machine:Amd64  /machine:Amd64 /SECTION:INIT,  /SECTION:INIT,d /FULLBUILD /OPT:REF /OPT:ICF   /FULLBUILD /OPT:REF /OPT:ICF /osversion:5.00 /subsystem:  /osversion:5.00 /subsystem:native,1.10 /debug:Full /ignore:4010,4037,4039,4065,4070,4078,4  /subsystem:native,1.10 /debug:Full /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210   /debug:Full /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210   /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210 </AdditionalOptions>
+      <SetChecksum>true</SetChecksum>
+      <MergeSections>.rdata=.text</MergeSections>
+      <BaseAddress>0x10000</BaseAddress>
+      <AdditionalDependencies>ntoskrnl.lib;hal.lib;wmilib.lib;ndis.lib;fwpkclnt.lib;bufferoverflowK.lib;BufferOverflowK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <Version>5.0</Version>
+      <StackReserveSize>262144</StackReserveSize>
+      <StackCommitSize>4096</StackCommitSize>
+      <EntryPointSymbol>DriverEntry</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Checked|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <OmitFramePointers>false</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>.;$(IFSKIT_INC_PATH);$(TARGET_INC_PATH);$(CRT_INC_PATH);$(DDK_INC_PATH);$(WDM_INC_PATH);E:\WinDDK\7600.16385.1\inc\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_AMD64_;%(PreprocessorDefinitions);_WIN64;STD_CALL;CONDITION_HANDLING=1;NT_INST=0;WIN32=100;_NT1X_=100;WINNT=1;WIN32_LEAN_AND_MEAN=1;DEVL=1;FPO=0;NDEBUG;_DLL=1;DEPRECATE_DDK_FUNCTIONS;_WIN32_WINNT=_WIN32_WINNT_LONGHORN;WINVER=0x0601;_WIN32_IE=0x0700;NTDDI_VERSION=NTDDI_LONGHORN;BINARY_COMPATIBLE=0;NT;UNICODE;NDIS60</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\objchk\Amd64\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\objchk\Amd64\NetFilter.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\objchk\Amd64\</ObjectFileName>
+      <ProgramDataBaseFileName>.\objchk\Amd64\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zel -cbstring /Oxs </AdditionalOptions>
+      <CallingConvention>StdCall</CallingConvention>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\objchk\Amd64\NetFilter.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(CRT_INC_PATH);$(DDK_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;DBG=1;BINARY_COMPATIBLE=0;NT;UNICODE;_UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\objchk\Amd64\NetFilter.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>objchk\Amd64\NetFilter.sys</OutputFile>
+      <AdditionalOptions>/subsystem:native /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210 /driver:WDM </AdditionalOptions>
+      <SetChecksum>true</SetChecksum>
+      <MergeSections>.rdata=.text</MergeSections>
+      <BaseAddress>0x10000</BaseAddress>
+      <AdditionalDependencies>ntoskrnl.lib;hal.lib;wmilib.lib;ndis.lib;fwpkclnt.lib;bufferoverflowK.lib;BufferOverflowK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <Version>5.0</Version>
+      <StackReserveSize>262144</StackReserveSize>
+      <StackCommitSize>4096</StackCommitSize>
+      <EntryPointSymbol>DriverEntry</EntryPointSymbol>
+      <AllowIsolation>false</AllowIsolation>
+      <EnableUAC>false</EnableUAC>
+      <SubSystem>Console</SubSystem>
+      <Driver>Driver</Driver>
+      <AdditionalLibraryDirectories>$(TARGET_LIB_PATH);E:\WinDDK\7600.16385.1\lib\win7\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy "$(TargetPath)" F:\Temp</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>s</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Free|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>.;$(TARGET_INC_PATH);$(CRT_INC_PATH);$(DDK_INC_PATH);$(WDM_INC_PATH);$(SDK_INC_PATH)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>warning.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_X86_=1;i386=1;STD_CALL;CONDITION_HANDLING=1;NT_INST=0;WIN32=100;_NT1X_=100;WINNT=1;WIN32_LEAN_AND_MEAN=1;DEVL=1;FPO=0;NDEBUG;_DLL=1;_WIN32_WINNT=0x0600;WINVER=0x0600;_WIN32_IE=0x0600;NTDDI_VERSION=0x06000000;BINARY_COMPATIBLE=0;NT;UNICODE;NDIS60</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\objfre\i386\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\objfre\i386\NetFilter.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\objfre\i386\</ObjectFileName>
+      <ProgramDataBaseFileName>.\objfre\i386\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zel -cbstring /Oxs </AdditionalOptions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\objfre\i386\NetFilter.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(CRT_INC_PATH);$(DDK_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;BINARY_COMPATIBLE=0;NT;UNICODE;_UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\objfre\i386\NetFilter.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>objfre\i386\NetFilter.sys</OutputFile>
+      <AdditionalLibraryDirectories>$(TARGET_LIB_PATH);$(SDK_LIB_DEST);$(DDK_LIB_DEST)\i386;I:\WINDDK\7600.16385.0\lib\win7\i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions> /DRIVER  /SECTION:INIT,d  /FULLBUILD /OPT:REF  /osversion:5.00 /subsystem:native,1.10 /debug:MINIMAL /ignor  /subsystem:native,1.10 /debug:MINIMAL /debug:MINIMAL </AdditionalOptions>
+      <SetChecksum>true</SetChecksum>
+      <MergeSections>.rdata=.text</MergeSections>
+      <BaseAddress>0x10000</BaseAddress>
+      <AdditionalDependencies>ntoskrnl.lib;hal.lib;wmilib.lib;ndis.lib;fwpkclnt.lib;bufferoverflowK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <Version>5.0</Version>
+      <StackReserveSize>262144</StackReserveSize>
+      <StackCommitSize>4096</StackCommitSize>
+      <EntryPointSymbol>DriverEntry</EntryPointSymbol>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Free|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>.;$(TARGET_INC_PATH);$(CRT_INC_PATH);$(DDK_INC_PATH);$(WDM_INC_PATH);$(SDK_INC_PATH)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>warning.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_AMD64_=1;amd64=1;DBG=1;STD_CALL;CONDITION_HANDLING=1;NT_INST=0;WIN32=100;_NT1X_=100;WINNT=1;WIN32_LEAN_AND_MEAN=1;DEVL=1;FPO=0;NDEBUG;_DLL=1;_WIN32_WINNT=0x0600;WINVER=0x0600;_WIN32_IE=0x0600;NTDDI_VERSION=0x06000000;BINARY_COMPATIBLE=0;NT;UNICODE;NDIS60</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\objfre\i386\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\objfre\i386\NetFilter.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\objfre\i386\</ObjectFileName>
+      <ProgramDataBaseFileName>.\objfre\i386\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zel -cbstring /Oxs </AdditionalOptions>
+      <CallingConvention>StdCall</CallingConvention>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\objfre\i386\NetFilter.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(CRT_INC_PATH);$(DDK_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;BINARY_COMPATIBLE=0;NT;UNICODE;_UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\objfre\i386\NetFilter.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>objfre\amd64\NetFilter.sys</OutputFile>
+      <AdditionalLibraryDirectories>$(TARGET_LIB_PATH);$(SDK_LIB_DEST);$(DDK_LIB_DEST)\amd64;I:\WINDDK\7600.16385.0\lib\win7\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions> /DRIVER  /SECTION:INIT,d  /FULLBUILD /OPT:REF  /osversion:5.00 /subsystem:native,1.10 /debug:MINIMAL /ignor  /subsystem:native,1.10 /debug:MINIMAL /debug:MINIMAL </AdditionalOptions>
+      <SetChecksum>true</SetChecksum>
+      <MergeSections>.rdata=.text</MergeSections>
+      <BaseAddress>0x10000</BaseAddress>
+      <AdditionalDependencies>ntoskrnl.lib;hal.lib;wmilib.lib;ndis.lib;fwpkclnt.lib;bufferoverflowK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <Version>5.0</Version>
+      <StackReserveSize>262144</StackReserveSize>
+      <StackCommitSize>4096</StackCommitSize>
+      <EntryPointSymbol>DriverEntry</EntryPointSymbol>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AssemblyDebug>true</AssemblyDebug>
+      <MapExports>true</MapExports>
+      <Driver>Driver</Driver>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Free|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>.;$(TARGET_INC_PATH);$(CRT_INC_PATH);$(DDK_INC_PATH);$(WDM_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>warning.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_AMD64_;AMD64;STD_CALL;WIN32=100;_WIN32_WINNT=_WIN32_WINNT_LONGHORN;WINVER=$(WINVER);_WIN32_IE=_WIN32_WINNT_LONGHORN;NTDDI_VERSION=NTDDI_LONGHORN;BINARY_COMPATIBLE=0;NDEBUG;UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\objfre\Amd64\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\objfre\Amd64\NetFilter.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\objfre\Amd64\</ObjectFileName>
+      <ProgramDataBaseFileName>.\objfre\Amd64\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zel -cbstring /Oxs </AdditionalOptions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\objfre\Amd64\NetFilter.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(CRT_INC_PATH);$(DDK_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;BINARY_COMPATIBLE=0;NT;UNICODE;_UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\objfre\Amd64\NetFilter.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>objfre\Amd64\NetFilter.sys</OutputFile>
+      <AdditionalOptions> /DRIVER  /machine:Amd64  /SECTION:INIT,d /FULLBUILD /OP  /FULLBUILD /OPT:REF /OPT:ICF /osversion:5  /osversion:5.00 /subsystem:native,1.10 /debug:MINIMAL /ignore:4010,4037,403  /subsystem:native,1.10 /debug:MINIMAL /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210   /debug:MINIMAL /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210   /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210 </AdditionalOptions>
+      <SetChecksum>true</SetChecksum>
+      <MergeSections>.rdata=.text</MergeSections>
+      <BaseAddress>0x10000</BaseAddress>
+      <AdditionalDependencies>ntoskrnl.lib;hal.lib;wmilib.lib;ndis.lib;fwpkclnt.lib;bufferoverflowK.lib;BufferOverflowK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <Version>5.0</Version>
+      <StackReserveSize>262144</StackReserveSize>
+      <StackCommitSize>4096</StackCommitSize>
+      <EntryPointSymbol>DriverEntry</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Amd64 Free|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>.;$(TARGET_INC_PATH);$(CRT_INC_PATH);$(DDK_INC_PATH);$(WDM_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>warning.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_AMD64_;AMD64;STD_CALL;WIN32=100;_WIN32_WINNT=_WIN32_WINNT_LONGHORN;WINVER=$(WINVER);_WIN32_IE=_WIN32_WINNT_LONGHORN;NTDDI_VERSION=NTDDI_LONGHORN;BINARY_COMPATIBLE=0;NDEBUG;UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\objfre\Amd64\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\objfre\Amd64\NetFilter.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\objfre\Amd64\</ObjectFileName>
+      <ProgramDataBaseFileName>.\objfre\Amd64\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zel -cbstring /Oxs </AdditionalOptions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\objfre\Amd64\NetFilter.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(CRT_INC_PATH);$(DDK_INC_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;BINARY_COMPATIBLE=0;NT;UNICODE;_UNICODE;NDIS60;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\objfre\Amd64\NetFilter.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>objfre\Amd64\NetFilter.sys</OutputFile>
+      <AdditionalOptions> /DRIVER  /machine:Amd64  /SECTION:INIT,d /FULLBUILD /OP  /FULLBUILD /OPT:REF /OPT:ICF /osversion:5  /osversion:5.00 /subsystem:native,1.10 /debug:MINIMAL /ignore:4010,4037,403  /subsystem:native,1.10 /debug:MINIMAL /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210   /debug:MINIMAL /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210   /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210 </AdditionalOptions>
+      <SetChecksum>true</SetChecksum>
+      <MergeSections>.rdata=.text</MergeSections>
+      <BaseAddress>0x10000</BaseAddress>
+      <AdditionalDependencies>ntoskrnl.lib;hal.lib;wmilib.lib;ndis.lib;fwpkclnt.lib;bufferoverflowK.lib;BufferOverflowK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <Version>5.0</Version>
+      <StackReserveSize>262144</StackReserveSize>
+      <StackCommitSize>4096</StackCommitSize>
+      <EntryPointSymbol>DriverEntry</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="arp.c" />
+    <ClCompile Include="device.c" />
+    <ClCompile Include="ethernet.c" />
+    <ClCompile Include="filter.c" />
+    <ClCompile Include="flt_dbg.c" />
+    <ClCompile Include="icmp.c" />
+    <ClCompile Include="ip.c" />
+    <ClCompile Include="tcp.c" />
+    <ClCompile Include="udp.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arp.h" />
+    <ClInclude Include="ethernet.h" />
+    <ClInclude Include="filter.h" />
+    <ClInclude Include="filteruser.h" />
+    <ClInclude Include="flt_dbg.h" />
+    <ClInclude Include="icmp.h" />
+    <ClInclude Include="ip.h" />
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="tcp.h" />
+    <ClInclude Include="udp.h" />
+    <ClInclude Include="utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="sources">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

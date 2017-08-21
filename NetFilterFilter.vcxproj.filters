@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b61f2c35-ce23-4c26-b352-a77990f41051}</UniqueIdentifier>
+      <Extensions>.c;.cpp</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{dfb63f43-42b5-4b04-a6d1-1510e62870cd}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{cc0e5a86-26ac-4a08-9c5d-345f089371cf}</UniqueIdentifier>
+      <Extensions>.rc;.mc;.mof</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="arp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="device.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ethernet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="flt_dbg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="icmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="udp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ethernet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filteruser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="flt_dbg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="icmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="precomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="udp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="sources" />
+  </ItemGroup>
+</Project>
